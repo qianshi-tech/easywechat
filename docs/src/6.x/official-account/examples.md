@@ -29,7 +29,7 @@ class OfficialAccount
         $server = $app->getServer();
         $response = $server->serve();
 
-        return response($response->getBody());
+        return $response->getBody();
     }
 }
 ```
